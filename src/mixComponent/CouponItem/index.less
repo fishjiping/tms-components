@@ -1,0 +1,206 @@
+@rem: 100rem;
+
+.single-coupon {
+    position: relative;
+    width: 710/@rem;
+    height: 210/@rem;
+    margin-bottom: 20/@rem;
+    border-radius: 8/@rem;
+    background: #FFECE5;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .half-circle-before {
+        content: '';
+        position: absolute;
+        width: 34/@rem;
+        height: 34/@rem;
+        left: 215/@rem;
+        top: -17/@rem;
+        border-radius: 50%;
+        background: #fff;
+    }
+    
+    .half-circle-after {
+        content: '';
+        position: absolute;
+        width: 34/@rem;
+        height: 34/@rem;
+        left: 215/@rem;
+        bottom: -17/@rem;
+        border-radius: 50%;
+        background: #fff;
+    }
+    
+    .coupon-content {
+        display: flex;
+    }
+    
+    .separator-line {
+        position: absolute;
+        left: 229/@rem;
+        top: 25/@rem;
+        bottom: 25/@rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .dashed {
+            width: 6/@rem;
+            height: 20/@rem;
+            border-radius: 6/@rem;
+            background-color: #fff;
+        }
+    }
+    
+    .coupon-left,
+    .coupon-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 210/@rem;
+    }
+    
+    .coupon-left {
+        width: 232/@rem;
+    }
+    
+    .coupon-right {
+        flex: 1;
+        padding-left: 70/@rem;
+    }
+    
+    .coupon-type {
+        margin-bottom: 15/@rem;
+        font-size: 54/@rem;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: #FA4100;
+        line-height: 60/@rem;
+        text-align: center;
+    }
+    
+    .coupon-rule {
+        font-size: 24/@rem;
+        color: #333;
+        line-height: 33/@rem;
+        text-align: center;
+    }
+    
+    .title {
+        margin-bottom: 12/@rem;
+        font-size: 32/@rem;
+        font-weight: 500;
+        color: #333;
+        line-height: 45/@rem;
+    }
+    
+    .time {
+        margin-bottom: 16/@rem;
+        font-size: 22/@rem;
+        color: #999;
+        line-height: 30/@rem;
+    }
+    
+    .coupon-btn {
+        display: inline-block;
+        width: 210/@rem;
+        height: 48/@rem;
+        border-radius: 63/@rem;
+        font-size: 26/@rem;
+        color: #fff;
+        line-height: 48/@rem;
+        text-align: center;
+        background-color: #FA4100;
+    }
+}
+
+.double-coupon {
+    position: relative;
+    width: 300/@rem;
+    height: 210/@rem;
+    border-radius: 8/@rem;
+    background: #FFECE5;
+
+    .half-circle-before {
+        content: '';
+        position: absolute;
+        width: 26/@rem;
+        height: 26/@rem;
+        left: -13/@rem;
+        top: 92/@rem;
+        border-radius: 50%;
+        background: #fff;
+    }
+    
+    .half-circle-after {
+        content: '';
+        position: absolute;
+        width: 26/@rem;
+        height: 26/@rem;
+        right: -13/@rem;
+        top: 92/@rem;
+        border-radius: 50%;
+        background: #fff;
+    }
+    
+    .coupon-left,
+    .coupon-right {
+        display: flex;
+        height: 105/@rem;
+    }
+    
+    .coupon-left {
+        align-items: center;
+        padding-left: 38/@rem;
+        border-bottom: 1px dashed #D8D8D8;
+    }
+    
+    .coupon-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .coupon-type {
+        display: inline-block;
+        width: 124/@rem;
+        font-size: 50/@rem;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: #FA4100;
+        line-height: 60/@rem;
+    }
+    
+    .coupon-rule {
+        display: inline-block;
+        margin-top: 10/@rem;
+        font-size: 24/@rem;
+        color: #333;
+    }
+    
+    .time {
+        margin-bottom: 8/@rem;
+        font-size: 24/@rem;
+        color: #999;
+        line-height: 30/@rem;
+        white-space: nowrap;
+        transform: scale(.75);
+    }
+    
+    .coupon-btn {
+        display: inline-block;
+        width: 180/@rem;
+        height: 40/@rem;
+        border-radius: 52/@rem;
+        font-size: 22/@rem;
+        color: #fff;
+        line-height: 40/@rem;
+        text-align: center;
+        background-color: #FA4100;
+        span {
+            transform: scale(.9);
+        }
+    }
+}

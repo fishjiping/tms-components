@@ -1,0 +1,57 @@
+{
+    "backgroundColor": "#fff",
+    "backgroundImage": "",
+    "moduleList": [
+        {
+            "baseInfo": {
+                "id": "1",
+                "component": "Slider",
+                "name": "轮播banner",
+                "type": "banner",
+                "cover": "n/07/26/1469540480980_3036.jpeg",
+                "latest_version": "18",
+                "publisher": "yujiping",
+                "gmt_create": "2016-07-26T13:42:25.000Z",
+                "gmt_modify": "2016-08-05T06:25:05.000Z",
+                "uuid": "l8zmk",
+                "version": "18"
+            },
+            "data": {
+                "picList": [
+                    {
+                        "pic": "//img.alicdn.com/imgextra/i3/104/TB2cYZLmCfD8KJjSszhXXbIJFXa_!!104-0-luban.jpg_q50.jpg",
+                        "link": "//www.baicu.com"
+                    },
+                    {
+                        "pic": "//aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg",
+                        "link": "//www.taobao.com"
+                    }
+                ],
+                "height": 235,
+                "moduleId": "asdasd"
+            },
+            "property": []
+        },
+        {
+            "baseInfo": {
+                "id": "2",
+                "component": "Text",
+                "name": "文本",
+                "type": "text",
+                "cover": "n/07/26/1469540480980_3036.jpeg",
+                "latest_version": "18",
+                "publisher": "yujiping",
+                "gmt_create": "2016-07-26T13:42:25.000Z",
+                "gmt_modify": "2016-08-05T06:25:05.000Z",
+                "uuid": "lasmq",
+                "version": "18"
+            },
+            "data": {
+                "fontSize": 28,
+                "color": "#333",
+                "content": "<p>123</p>test text content"
+            },
+            "property": []
+        }
+    ]
+}

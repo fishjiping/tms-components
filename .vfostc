@@ -1,0 +1,60 @@
+{
+    env: 'development',
+    /**
+     * assign file path of your project webpack
+     */
+    webpack: {
+        dir: './webpack',
+        // if not real path, here we should catch the exception in process
+        // but we didn't work, so make sure it right while you won't change default value
+        dev: 'config.dev.js'
+    },
+
+    /**
+     * DEV SERVER
+     * The configuration of the web server in the development environment
+     */
+    server: {
+        mocksDir: './mocks',
+        // if you want mock data and server response are supported at same time;
+        // you can specified the priority level
+        // default priority pull data from remote, then from locally. 
+        // like as: 'remote:local' or 'local:remote'
+        mocksPriority: 'remote:local',
+
+        // note: if you open login-proxy, we do not advise you to set hostname as 'localhost'
+        // please change your local mechine's hosts to some domain.
+        hostname: 'localhost',
+        port: 8989
+    },
+
+    /** 
+     * proxy configuration
+     */
+    proxy: {
+        protocol: 'http',
+        port: 80,
+        hostname: 'daily.52shangou.com',
+        /** 
+         * Whether to provide sign-in simulation function, if you want, 
+         * please refer as the following setting, otherwise set it as 'false'.
+         * 
+         * @NOTE: we just support 'POST' method.
+         * 
+         * login: {
+         *   url: 'xx.com/login',
+         *   port: 80,
+         *   protocol: 'http',
+         *   // if it is 'form' type, ignore it
+         *   // default 'application/x-www-form-urlencoded'
+         *   contentType: 'application/json', 
+         *   formData: {
+         *     // using the actual parameters,like as:
+         *     "mobile": "18655554444",
+         *     "password": "qwe123"
+         *   }
+         * }
+         **/
+        login: false
+    }
+}

@@ -1,0 +1,112 @@
+@rem: 100rem;
+
+.item-tc {
+    width: 750/@rem;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .list {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:  0 10/@rem;
+    }
+    
+    .separator-line {
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .item {
+        position:relative;
+        box-sizing: border-box;
+        width: 238/@rem;
+        margin-bottom: 20/@rem;
+        padding: 0 15/@rem 15/@rem; 
+        border-radius: 6/@rem;
+        overflow: hidden;
+        background-color: #fff;
+
+        // &:nth-last-child(1),
+        // &:nth-last-child(2):not(:nth-child(even)) {
+        //     margin-bottom: 0;
+        //     border-bottom: none; 
+        // }
+    }
+
+    .pic {
+        width: 208/@rem;
+        height: 208/@rem;
+        margin-bottom: 10/@rem;
+    }
+
+    .item-status-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 238/@rem;
+        height: 208/@rem;
+        background-color:rgba(255,255,255,.8);
+    }
+
+    .item-status-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 110/@rem;
+        height: 110/@rem;
+        transform: translate(-55/@rem, -55/@rem);
+        border-radius: 100%;
+        font-size: 24/@rem;
+        color: #fff;
+        letter-spacing: 2/@rem;
+        text-align: center;
+        line-height: 110/@rem;
+        background: rgba(102,102,102,.6);
+    }
+
+    .title {
+        height: 66/@rem;
+        margin-bottom: 9/@rem;
+        font-size: 24/@rem;
+        color: #000;
+        line-height: 33/@rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        word-break: break-all;
+        overflow: hidden;
+    }
+
+    .price-box {
+        margin-bottom: 18/@rem;
+        line-height: 33/@rem;
+    }
+
+    .price {
+        font-family: sans-serif;
+        font-size: 30/@rem;
+        color: #ff3d00;
+    }
+
+    .origin-price {
+        flex-grow: 1;
+        font-family: sans-serif;
+        font-size: 24/@rem;
+        color: #999;
+        margin-left: 15/@rem;
+        span {
+            text-decoration: line-through;
+        }
+    }
+
+    .add-cart-btn {
+        height: 40/@rem;
+        border-radius: 4/@rem;
+        font-size: 24/@rem;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        line-height: 40/@rem;
+    }
+}

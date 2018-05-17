@@ -1,0 +1,24 @@
+@rem: 100rem;
+
+.double-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20/@rem;
+
+    li {
+        width: 350/@rem;
+        height: 180/@rem;
+        margin-bottom: 10/@rem;
+        overflow: hidden;
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+    }
+
+    img {
+        width: 100%;
+        vertical-align: top;
+    }
+}

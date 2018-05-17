@@ -1,0 +1,47 @@
+@rem: 100rem;
+
+.slider {
+    position: relative;
+    overflow: hidden;
+
+    .slider-wrap {
+        // 解决transition引起的页面抖动bug
+        transform-style: preserve-3d;
+    }
+    
+    li {
+        position: relative;
+        float: left;
+        width: 750/@rem;
+        text-align: center;
+        background-color: #f1f1f1;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slider-status {
+        position: absolute;
+        right: 20/@rem;
+        bottom: 10/@rem;
+        z-index: 10;
+        height: 18/@rem;
+        font-size: 0;
+        span {
+            &:first-child {
+                margin: 0;
+            }
+            display: inline-block;
+            width: 9/@rem;
+            height: 9/@rem;
+            margin: 0 0 0 6/@rem;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 9/@rem;
+        }
+        .selected {
+            background: rgba(255, 255, 255, .8);
+        }
+    }
+}

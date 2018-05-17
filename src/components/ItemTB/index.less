@@ -1,0 +1,193 @@
+@rem: 100rem;
+
+.item-tb {
+    width: 750/@rem;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .list {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:  0 18/@rem;
+    }
+    
+    .separator-line {
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .item {
+        position:relative;
+        box-sizing: border-box;
+        width: 348/@rem;
+        margin-bottom: 20/@rem;
+        padding: 18/@rem 24/@rem 30/@rem; 
+        border-radius: 6/@rem;
+        overflow: hidden;
+        background-color: #fff;
+
+        &:nth-last-child(1),
+        &:nth-last-child(2):not(:nth-child(even)) {
+            margin-bottom: 0;
+            border-bottom: none; 
+        }
+        
+        .img {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300/@rem;
+            height: 300/@rem;
+            margin-bottom: 17/@rem;
+        }
+
+        .icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 32/@rem;
+        }
+
+        .pic {
+            width: 300/@rem;
+            height: 300/@rem;
+        }
+
+        .item-status-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300/@rem;
+            height: 300/@rem;
+            background-color:rgba(255,255,255,.8);
+        }
+
+        .item-status-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 110/@rem;
+            height: 110/@rem;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            font-size: 24/@rem;
+            color: #fff;
+            letter-spacing: 2/@rem;
+            text-align: center;
+            line-height: 110/@rem;
+            background: rgba(102,102,102,.6);
+        }
+
+        .title {
+            height: 40/@rem;
+            margin-bottom: 5/@rem;
+            font-size: 28/@rem;
+            font-weight: 600;
+            color: #333;
+            line-height: 40/@rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .desc {
+            height: 33/@rem;
+            margin-bottom: 16/@rem;
+            color: #666;
+            font-size: 24/@rem;
+            line-height: 33/@rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .info {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            height: 50/@rem;
+            padding-left: 10/@rem;
+            font-family: sans-serif;
+        }
+
+        .price {
+            font-size: 30/@rem;
+            color: #ff3d00;
+        }
+
+        .origin-price {
+            flex-grow: 1;
+            font-size: 24/@rem;
+            color: #999;
+            margin-left: 15/@rem;
+            span {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    // 加购
+    .btnarea {
+        position: absolute;
+        top: -5/@rem;
+        right: 4/@rem;
+        width: 60/@rem;
+        height: 60/@rem;
+        border-radius: 100%;
+        background-color: #FF3168;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAD///////////////////8+Uq06AAAABXRSTlMA5qYc7dRG+h8AAABbSURBVDjLY6AEMCsKGWCVMAkNdcYqoRoaGoRVQjQ0NBCrRCgQjEpQWYJZMRQDgKPSBFMcEpWq2CSCIBGHCQJxSuA0CqfluJ07WEN32EkgMifh7IwoAHAXGRQAABkaY+F1Uz9kAAAAAElFTkSuQmCC');
+        background-repeat: no-repeat;
+        background-size: 32/@rem 32/@rem;
+        background-position: center center;
+    }
+
+    .absshow {
+        position: absolute;
+        left: -120/@rem;
+        width: 120/@rem;
+        height: 60/@rem;
+        overflow: hidden;
+    }
+
+    .absmove {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 120/@rem;
+        width: 120/@rem;
+        height: 60/@rem;
+        transition: all .3s;
+        transform: translate3d(0, 0, 0);
+        background-color: #fff;
+    }
+
+    .absmove-transform {
+        transform: translate3d(-120/@rem, 0, 0);
+    }
+
+    .btnareareduce {
+        width: 60/@rem;
+        height: 60/@rem;
+        border-radius: 100%;
+        background-color: #fff;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAclBMVEUAAAC/v7+/v7/BwcHBwcHGxsa/v7++vr6/v7/AwMDAwMDAwMDAwMDm5ua+vr6/v7+/v7+/v7++vr6/v7++vr6+vr7AwMDDw8PJycnR0dG+vr6/v7+/v7++vr6/v7++vr6/v7/BwcHBwcHBwcG/v7++vr6V8kNqAAAAJXRSTlMA+tQ7IQ6jkIFjWkw0A+3139zHr6mbUxsTBdDs5sGIdmxGLRLPJByRXAAAAtJJREFUaN7kl9lyqzAQRAeQzGKBWc0SL/HC///irZETybEisw15uefVZTVM97QK+P/gIgrK3E0Tx0lSNy+DSHBaga1/73/h7m85kUJ4dHorzjFcrrMtd/0Au3ILC4gjt1e4xSn0rqxp24ZdvfBUPP8WxXMlwkwd4u9vYHDb+0ooC2fJeN33/wMGVljw/SSdB1Npqi9jN4P/9TZfwaiaiX4nD4mKwQhY9ZBJpiSg9XvJpoaR1Jte4rcwEpY/3PYmWfjIQM5gFOJDTuocTwzjWc7sQ8AILnL7UgGTEanczQsMEsnnKTjMgBdyBtGgRo8EMJOgRwZULvI9PmE2n/Jd3k5MoB/OHhawd9AXAVaYzBVqLFGRGWPWHcyNWc2eWG7bSt/wfIH7vqWvZHaBAJnkX3usSXAHORDAU2zLBkwqDJYAEgRGrAIDD1/xDESc8TTPqLcOezcGImLs5O71uFBJ0yAHE74oZ3hHASF4i2Wx0YtODYTUjtGUrkwDKRWa/LqHDgNSmPOykaVyhNiVEhR8p6NFG7Ad/5HfDMjJfqT4aGlfgjY+qmmhRQzIYRgn/pQtF1bAfcqXL+8YUsyDO/vFvvy6v4OEY5fdYAVueDIHRBiWkJoiVDkWsAoFlqSK8wlW4aQWsFSLaXzZHPoRHOzfSqGqr9xSXHXSjySp39RXrty5Wlp0FPYGv6pMpZZSOYwXObwplhQQnEqzjkiDswQE67FdZ1wtVqQWITdei+hx0UdYj0sbT442XkeYHB1hvYz06GXUtUKPrpX1C/Kvqn79S+vvrl/4V62dWgEAAkEM7QNN/zWicBiO95mlAexOkg4OCXASgeMOnKni4CbTgYwgMefIMBUTm8ACgj0EwCEoSkA1gQcJ6BTIVsBngtGFEBBqQ0ia/7rpjTjLUID3MjNHy94J5ixVfiz9E/OFgxAjNynZiGMqZD4zWGqrH9oMlsqkVyXeABmfyi+u41kqAAAAAElFTkSuQmCC');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+
+    .cartnum {
+        flex-grow: 1;
+        font-family: PingFangSC-Regular;
+        font-weight: bold;
+        font-size: 30/@rem;
+        line-height: 60/@rem;
+        height: 60/@rem;
+        text-align: center;
+        color: #333;
+        letter-spacing: 0;
+    }
+}

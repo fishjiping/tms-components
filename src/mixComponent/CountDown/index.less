@@ -1,0 +1,42 @@
+@rem: 100rem;
+
+.count-down{
+    display: flex;
+    height: 70/@rem;
+    margin-bottom: 20/@rem;
+    padding: 15/@rem 30/@rem;
+
+    .cd-text{
+        flex: 1;
+        font-size: 28/@rem;
+        font-weight: 500;
+        line-height: 40/@rem;
+    }
+
+    .number {
+        display: inline-block;
+        margin-left: 2/@rem;
+        width: 44/@rem;
+        border-radius: 2/@rem;
+        text-align: center;
+        vertical-align: top;
+        background-color: #fff;
+
+        em {
+            font-family: sans-serif;
+            font-size: 24/@rem;
+            font-weight: 500;
+            line-height: 40/@rem;
+            transform: scale(.9);
+        }
+    }
+
+    .unit {
+        display: inline-block;
+        margin-left: 2/@rem;
+        font-size: 24/@rem;
+        line-height: 40/@rem;
+        color: #fff;
+        transform: scale(.75);
+    }
+}
